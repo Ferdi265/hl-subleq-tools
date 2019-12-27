@@ -1,3 +1,5 @@
+import sys
+
 def ones(n, b = 16):
     return ~n & (2**b - 1)
 
