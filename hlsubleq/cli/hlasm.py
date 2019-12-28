@@ -2,7 +2,7 @@ import sys
 from hlsubleq.hlasm import *
 
 def usage():
-    Error("usage: hlasm.py <file.sbl> <out> [dryrun] [debug] [raw]")
+    Error("usage: hlasm.py <file.hlsbl> <out> [dryrun] [debug] [lsim]")
 
 def main():
     if len(sys.argv) < 3:
@@ -10,14 +10,14 @@ def main():
 
     dryrun = False
     debug = False
-    raw = False
+    lsim = False
     for arg in sys.argv[3:]:
         if arg == "dryrun":
             dryrun = True
         elif arg == "debug":
             debug = True
-        elif arg == "raw":
-            raw = True
+        elif arg == "lsim":
+            lsim = True
         else:
             usage()
 
@@ -29,7 +29,7 @@ def main():
 
     Asm = create_assembler(ifaces)
     asm = Asm(
-        infile = sys.argv[1], outfile = sys.argv[2], raw = raw
+        infile = sys.argv[1], outfile = sys.argv[2], lsim = lsim
     )
 
     asm.assemble()

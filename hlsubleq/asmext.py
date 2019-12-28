@@ -18,16 +18,16 @@ class FileInputAssembler(Assembler):
             return infile.read()
 
 class FileOutputAssembler(Assembler):
-    def __init__(self, outfile, raw, **kwargs):
+    def __init__(self, outfile, lsim, **kwargs):
         super().__init__(**kwargs)
         self.outf = outfile
-        self.raw = raw
+        self.lsim = lsim
 
     def write_start(self):
         self.outfile = open(self.outf, "w")
         self.cur = None
         self.count = 0
-        if not self.raw:
+        if self.lsim:
             self.outfile.write("v2.0 raw\n")
 
     def write_word(self, word):
@@ -41,7 +41,7 @@ class FileOutputAssembler(Assembler):
             self.cur = word
             self.count = 1
 
-        if word == self.cur and not self.raw:
+        if word == self.cur and self.lsim:
             self.count += 1
         else:
             output(word)
