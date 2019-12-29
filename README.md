@@ -2,7 +2,7 @@
 
 This repository contains a set of tools for writing programs in the
 [SUBLEQ](https://en.wikipedia.org/wiki/One_instruction_set_computer#Subtract_and_branch_if_less_than_or_equal_to_zero)
-machine, as well as a rudimentary 
+machine, as well as a software simulator.
 
 ## SUBLEQ
 
