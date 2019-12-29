@@ -1,0 +1,13 @@
+main:
+    counter counter NEXT
+loop:
+    MONE counter NEXT
+    ZERO ZERO loop
+
+ZERO:
+    0
+MONE:
+    -1
+
+@0xff00
+counter:

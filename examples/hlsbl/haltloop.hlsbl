@@ -1,0 +1,22 @@
+main:
+    CLEAR counter
+loop:
+    JGE counter stop halt
+    ADD counter _ONE
+    JMP loop
+halt:
+    HLT
+
+stop: 0x0123
+
+_ZERO: 0
+_ONE: 1
+
+_TEMP0: NONE
+_TEMP1: NONE
+
+@0xff00
+counter:
+
+@0xffff
+_HALT:

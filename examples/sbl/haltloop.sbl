@@ -1,0 +1,25 @@
+main:
+    counter counter NEXT
+loop:
+    negtemp negtemp NEXT
+    stop negtemp NEXT
+    temp temp NEXT
+    negtemp temp NEXT
+    counter temp HALT
+    MONE counter NEXT
+    temp temp loop
+
+MONE:
+    -1
+stop:
+    0x0123
+negtemp:
+    0
+temp:
+    0
+
+@0xff00
+counter:
+
+@0xffff
+HALT:

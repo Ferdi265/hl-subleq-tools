@@ -1,0 +1,16 @@
+main:
+    CLEAR counter
+loop:
+    ADD counter ONE
+    JMP loop
+
+ONE:
+    1
+_TEMP0:
+    0
+
+@0xff00
+counter:
+
+@0xffff
+_HALT:
