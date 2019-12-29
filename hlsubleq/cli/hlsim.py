@@ -3,7 +3,9 @@ from hlsubleq.sim import *
 from hlsubleq.hlasm import *
 
 def usage():
-    Error("usage: hlsim.py <file.hlsbl> [n]")
+    Error("usage: {} <file.hlsbl> [n]"
+        .format(sys.argv[0])
+    )
 
 def main():
     if len(sys.argv) < 2 or len(sys.argv) > 3:

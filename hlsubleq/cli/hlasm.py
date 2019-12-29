@@ -2,7 +2,9 @@ import sys
 from hlsubleq.hlasm import *
 
 def usage():
-    Error("usage: hlasm.py <file.hlsbl> <out> [dryrun] [debug] [lsim]")
+    Error("usage: {} <file.hlsbl> <out> [dryrun] [debug] [lsim]"
+        .format(sys.argv[0])
+    )
 
 def main():
     if len(sys.argv) < 3:
