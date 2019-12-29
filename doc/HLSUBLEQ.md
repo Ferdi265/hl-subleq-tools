@@ -10,7 +10,7 @@ subleq-hlasm <file.hlsbl> <out> [dryrun] [debug] [lsim]
 ```
 
 The general behaviour and invocation of the assembler is the same as
-`subleq-asm`, see [doc/ASSEMBLER.md](ASSEMBLER.md).
+`subleq-asm`, see [ASSEMBLER.md](ASSEMBLER.md).
 
 ### Options
 
@@ -25,7 +25,7 @@ subleq-hlsim <file.hlsbl> [n]
 ```
 
 The general behaviour and invocation of the simulator is the same as
-`subleq-sim`, see [doc/SIMULATOR.md](SIMULATOR.md).
+`subleq-sim`, see [SIMULATOR.md](SIMULATOR.md).
 
 ## Instruction Set
 
@@ -68,7 +68,7 @@ SUBLEQ instructions.
 ## Assembler Operation
 
 The HLSUBLEQ assembler operates mostly the same way as `subleq-asm`
-(see [doc/ASSEMBLER.md](ASSEMBLER.md)), with the addition that there are now a
+(see [ASSEMBLER.md](ASSEMBLER.md)), with the addition that there are now a
 few special mnemonics that expand to sequences of SUBLEQ instructions
 implementing a specific operation.
 

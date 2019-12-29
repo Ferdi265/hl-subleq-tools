@@ -18,7 +18,7 @@ to the file `out`.
 - `debug`: print out every `number`, `symbol`, `label` definition, or `seek`
   when encountering them, creating a pretty-printed version of the program. Not
   very useful for `subleq-asm`, but more useful for `subleq-hlasm` (see
-  [doc/HLSUBLEQ.md](HLSUBLEQ.md))
+  [HLSUBLEQ.md](HLSUBLEQ.md))
 - `lsim`: by default, the assembler prints the assembled program in hex, one
   16-bit word per line. This option enables [Logisim](http://www.cburch.com/logisim/)
   memory image format instead.

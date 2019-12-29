@@ -44,11 +44,11 @@ Any fetch from address `0xffff` halts the machine. This includes operand fetches
 The tools provided in this package are the following:
 
 - `subleq-asm`: a simple assembler for SUBLEQ, syntax and behaviour further
-  described in [ASSEMBLER.md](doc/ASSEMBLER.md)
+  described in [doc/ASSEMBLER.md](doc/ASSEMBLER.md)
 - `subleq-sim`: an assembler-level simulator for SUBLEQ, behaviour further
-  described in [SIMULATOR.md](doc/SIMULATOR.md)
+  described in [doc/SIMULATOR.md](doc/SIMULATOR.md)
 - `subleq-hlasm`: a 'higher level' macro assembler that expands instruction
   mnemonics down to SUBLEQ, instruction set further described in
-  [HLSUBLEQ.md](doc/HLSUBLEQ.md)
+  [doc/HLSUBLEQ.md](doc/HLSUBLEQ.md)
 - `subleq-hlsim`: an extension of the `subleq-sim` simulator to HLSUBLEQ,
-  further described in [HLSUBLEQ.md](doc/HLSUBLEQ.md)
+  further described in [doc/HLSUBLEQ.md](doc/HLSUBLEQ.md)

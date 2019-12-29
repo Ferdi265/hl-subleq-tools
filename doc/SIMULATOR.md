@@ -10,7 +10,7 @@ subleq-sim <file.sbl> [n]
 ```
 
 The simulator will read the file `file.sbl`, assemble it (see
-[doc/ASSEMBLER.md](ASSEMBLER.md)), and simulate up to `n` instructions
+[ASSEMBLER.md](ASSEMBLER.md)), and simulate up to `n` instructions
 (or until the machine halts if `n` is not given).
 
 ## Simulator Operation
