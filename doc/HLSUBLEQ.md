@@ -79,7 +79,8 @@ instruction.
 ## Required Labels
 
 Every HLSUBLEQ program is required to define the following labels for use by the
-implementation:
+implementation when instructions are used that use them (see Instruction Set
+Listing):
 
 - `_ZERO`: the integer constant 0 (currently unused)
 - `_ONE`: the integer constant 1 (currently unused)
