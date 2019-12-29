@@ -3,6 +3,8 @@
 This page describes the syntax, operation and invocation of the `subleq-asm`
 assembler program.
 
+The assembler does not support comments.
+
 ## Assembler Invocation
 
 ```
